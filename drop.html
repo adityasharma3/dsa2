@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dropdown</title>
+
+	<script type="text/javascript">
+
+		function enable() {
+			return document.getElementById('op').disabled = false;	
+		}
+
+		function disable() {
+			return document.getElementById('op').disabled = true;
+		}
+
+
+	</script>
+</head>
+<body>
+	<h1>DropDown</h1>
+	<form>
+		<select id = "op">
+			<option>Apple</option>
+			<option>Samsung</option>
+			<option>Xiaomi</option>
+			<option>Realme</option>
+			<option>OnePlus</option>
+		</select>
+		<br><br>
+		<input type="button" onclick="disable()" value="Dislable">
+		<input type="button" onclick="enable()" value="Enable">
+	</form>
+</body>
+</html>

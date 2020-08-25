@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dropdown</title>
+
+	<script type="text/javascript">
+
+		function get_id() {
+			document.getElementById("enter").innerHTML = document.getElementById("op").form.id;
+		}
+
+	</script>
+</head>
+<body>
+	<h1>DropDown</h1>
+	<form>
+		<select id = "op">
+			<option>Apple</option>
+			<option>Samsung</option>
+			<option>Xiaomi</option>
+			<option>Realme</option>
+			<option>OnePlus</option>
+		</select>
+		<br><br>
+		<input type="button" onclick="get_id()" value="get id">
+	</form>
+
+	<p id = "enter"></p>
+</body>
+</html>
